@@ -1,20 +1,14 @@
-def input_positive_number(prompt):
-    n=0
-    while n<=0:
-        n= int(input(prompt))
-    return n
+def display_multiplication_table():
+    for n in range(1, 10):
+        for i in range(2, 6):
+            print(f"{i} x {n} = {n * i:2d}", end="\t")
+        print()
+    print()
+    for n in range(1, 10):
+        for i in range(6, 10):
+            print(f"{i} x {n} = {n * i:2d}", end="\t")
+        print()
 
 
-def display_multiplication_table(n):
-    for i in range(1,10):
-        print(f"{n} x {i} = {n * i:2d}")
 
-def display_multiplication_table(n):
-    i=1
-    while i<=9:
-        print(f"{n} x {i} = {n * i:2d}")
-        i+=1
-
-n = input_positive_number('출력할 구구단을 입력해주세요')
-
-display_multiplication_table(n)
+display_multiplication_table()
