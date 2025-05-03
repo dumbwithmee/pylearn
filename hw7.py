@@ -14,3 +14,10 @@ while True:
 
 print(f'\n>>> 장바구니 보기 : {shopping_bag}')
 
+print('[검색]')
+search_item = input('\n장바구니에서 확인하고자 하는 상품은? : ')
+qty = shopping_bag.get(search_item)
+if qty is not None:
+    print(f'{search_item}는(은) {qty}개 담겨있습니다.')
+else:
+    print(f'{search_item}는(은) 장바구니에 없습니다.')
